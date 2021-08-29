@@ -1,0 +1,130 @@
+* {
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+    box-sizing: border-box;
+}
+.wrapper {
+    padding: 50px;
+    max-width: 1000px;
+}
+
+@media (min-width: 820px) {
+    .wrapper {
+        display: flex;
+        margin: 50px;
+    }
+}
+.colors {
+    border: 1px solid gray;
+    border-radius: 20px;
+    padding: 10px;
+    text-align: center;
+    flex: 1 0 25%;
+    margin: 0px 0px 20px 0px;
+}
+@media (min-width: 820px) {
+    .colors {
+        margin: 0px 20px 0px 0px;
+    }
+}
+.colors__tite {
+    margin: 0px 0px 30px 0px;
+    position: relative;
+}
+.colors__tite::after {
+    content: "";
+    position: absolute;
+    background-color: gray;
+    width: 95%;
+    height: 1px;
+    left: 50%;
+    bottom: -15px;
+    transform: translate(-50%, 0);
+}
+.colors__items {
+    display: flex;
+    flex-wrap: wrap;
+}
+.colors__item {
+    list-style: none;
+    width: 40px;
+    height: 20px;
+    margin: 5px;
+    border-radius: 5px;
+}
+.colors__item:nth-child(1) {
+    background-color: rgb(255, 30, 0);
+}
+.colors__item:nth-child(2) {
+    background-color: rgb(255, 123, 0);
+}
+.colors__item:nth-child(3) {
+    background-color: rgb(255, 217, 0);
+}
+.colors__item:nth-child(4) {
+    background-color: rgb(208, 255, 0);
+}
+.colors__item:nth-child(5) {
+    background-color: rgb(102, 255, 0);
+}
+.colors__item:nth-child(6) {
+    background-color: rgb(0, 255, 136);
+}
+.colors__item:nth-child(7) {
+    background-color: rgb(0, 255, 242);
+}
+.colors__item:nth-child(8) {
+    background-color: rgb(0, 60, 255);
+}
+.colors__item:nth-child(9) {
+    background-color: rgb(204, 0, 255);
+}
+.colors__item:nth-child(10) {
+    background-color: rgb(255, 0, 170);
+}
+.colors__item:nth-child(11) {
+    background-color: rgb(0, 183, 255);
+}
+.colors__item:nth-child(12) {
+    background-color: rgb(238, 255, 0);
+}
+
+.image {
+    flex: 1 0 75%;
+    overflow: hidden;
+    position: relative;
+}
+.image__ceiling-start {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    object-fit: cover;
+}
+.image__room {
+    width: 100%;
+    object-fit: cover;
+}
+.image__lanterns {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    object-fit: cover;
+}
+.image__color {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 95%;
+    height: 50%;
+    object-fit: cover;
+    z-index: -1;
+}
+.image__top {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    object-fit: cover;
+}
